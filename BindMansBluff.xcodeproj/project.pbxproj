@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		842D00AF14605A6900BE6FED /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 842D00AE14605A6900BE6FED /* Deck.m */; };
 		8491526B14599DF6005118F1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8491526A14599DF6005118F1 /* UIKit.framework */; };
 		8491526D14599DF6005118F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8491526C14599DF6005118F1 /* Foundation.framework */; };
 		8491526F14599DF6005118F1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8491526E14599DF6005118F1 /* CoreGraphics.framework */; };
@@ -15,22 +16,34 @@
 		8491527B14599DF6005118F1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8491527A14599DF6005118F1 /* AppDelegate.m */; };
 		8491527E14599DF6005118F1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8491527D14599DF6005118F1 /* ViewController.m */; };
 		8491528114599DF6005118F1 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8491527F14599DF6005118F1 /* ViewController.xib */; };
+		8491528914599EA5005118F1 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 8491528814599EA5005118F1 /* Card.m */; };
+		A905AD1114740A4500A36A1F /* Character.m in Sources */ = {isa = PBXBuildFile; fileRef = A905AD1014740A4500A36A1F /* Character.m */; };
+		A905AD2B14744C0C00A36A1F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A905AD2A14744C0C00A36A1F /* AVFoundation.framework */; };
+		A98074FD147456CF00D30A3E /* convict in Resources */ = {isa = PBXBuildFile; fileRef = A98074FC147456CF00D30A3E /* convict */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		842D00AD14605A6900BE6FED /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
+		842D00AE14605A6900BE6FED /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deck.m; sourceTree = "<group>"; };
 		8491526614599DF6005118F1 /* BindMansBluff.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BindMansBluff.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8491526A14599DF6005118F1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8491526C14599DF6005118F1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8491526E14599DF6005118F1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		8491527214599DF6005118F1 /* BindMansBluff-Info.plist */ = {isa = PBXFileReference; path = "BindMansBluff-Info.plist"; sourceTree = "<group>"; };
+		8491527214599DF6005118F1 /* BindMansBluff-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BindMansBluff-Info.plist"; sourceTree = "<group>"; };
 		8491527414599DF6005118F1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8491527614599DF6005118F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		8491527814599DF6005118F1 /* BindMansBluff-Prefix.pch */ = {isa = PBXFileReference; path = "BindMansBluff-Prefix.pch"; sourceTree = "<group>"; };
-		8491527914599DF6005118F1 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		8491527814599DF6005118F1 /* BindMansBluff-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BindMansBluff-Prefix.pch"; sourceTree = "<group>"; };
+		8491527914599DF6005118F1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8491527A14599DF6005118F1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8491527C14599DF6005118F1 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		8491527C14599DF6005118F1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		8491527D14599DF6005118F1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8491528014599DF6005118F1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		8491528714599EA5005118F1 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		8491528814599EA5005118F1 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		A905AD0F14740A4500A36A1F /* Character.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Character.h; sourceTree = "<group>"; };
+		A905AD1014740A4500A36A1F /* Character.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Character.m; sourceTree = "<group>"; };
+		A905AD2A14744C0C00A36A1F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A98074FC147456CF00D30A3E /* convict */ = {isa = PBXFileReference; lastKnownFileType = folder; path = convict; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A905AD2B14744C0C00A36A1F /* AVFoundation.framework in Frameworks */,
 				8491526B14599DF6005118F1 /* UIKit.framework in Frameworks */,
 				8491526D14599DF6005118F1 /* Foundation.framework in Frameworks */,
 				8491526F14599DF6005118F1 /* CoreGraphics.framework in Frameworks */,
@@ -50,6 +64,7 @@
 		8491525B14599DF5005118F1 = {
 			isa = PBXGroup;
 			children = (
+				A905AD2A14744C0C00A36A1F /* AVFoundation.framework */,
 				8491527014599DF6005118F1 /* BindMansBluff */,
 				8491526914599DF6005118F1 /* Frameworks */,
 				8491526714599DF6005118F1 /* Products */,
@@ -82,6 +97,13 @@
 				8491527C14599DF6005118F1 /* ViewController.h */,
 				8491527D14599DF6005118F1 /* ViewController.m */,
 				8491527F14599DF6005118F1 /* ViewController.xib */,
+				8491528714599EA5005118F1 /* Card.h */,
+				8491528814599EA5005118F1 /* Card.m */,
+				842D00AD14605A6900BE6FED /* Deck.h */,
+				842D00AE14605A6900BE6FED /* Deck.m */,
+				A905AD0F14740A4500A36A1F /* Character.h */,
+				A905AD1014740A4500A36A1F /* Character.m */,
+				A98074FC147456CF00D30A3E /* convict */,
 				8491527114599DF6005118F1 /* Supporting Files */,
 			);
 			path = BindMansBluff;
@@ -151,6 +173,7 @@
 			files = (
 				8491527514599DF6005118F1 /* InfoPlist.strings in Resources */,
 				8491528114599DF6005118F1 /* ViewController.xib in Resources */,
+				A98074FD147456CF00D30A3E /* convict in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +187,9 @@
 				8491527714599DF6005118F1 /* main.m in Sources */,
 				8491527B14599DF6005118F1 /* AppDelegate.m in Sources */,
 				8491527E14599DF6005118F1 /* ViewController.m in Sources */,
+				8491528914599EA5005118F1 /* Card.m in Sources */,
+				842D00AF14605A6900BE6FED /* Deck.m in Sources */,
+				A905AD1114740A4500A36A1F /* Character.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +303,7 @@
 				8491528614599DF6005118F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

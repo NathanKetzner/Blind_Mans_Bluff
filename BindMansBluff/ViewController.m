@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "Character.h"
 
 @implementation ViewController
 
@@ -20,12 +21,20 @@
 
 - (void)viewDidLoad
 {
+    if (!ourDeck)
+    {
+        ourDeck = [[Deck alloc] initWithAFullDeck];
+        [ourDeck shuffle];
+        [ourDeck logThisDeck];
+    }
+    Character * convict = [[Character alloc] initCharacter:@"convict" andWithGender:@"it" andWithChips:50];
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	// Do any additional setup after loading the view, typically from a nib
 }
 
 - (void)viewDidUnload
 {
+    
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
