@@ -16,5 +16,6 @@
 -(id)initWithSuit:(NSString *)newSuit
      andWithValue:(int) cardValue
      andWithFrame:(CGRect)theFrame;
+//Jaurex's Comment
 
 @end
