@@ -2,7 +2,7 @@
 //  AppDelegate.h
 //  BindMansBluff
 //
-//  Created by Ben Coumerilh on 10/27/11.
+//  Created by Nathan Ketzner on 10/27/11.
 //  Copyright (c) 2011 Northwest Kansas Technical College. All rights reserved.
 //
 
