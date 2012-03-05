@@ -5,7 +5,7 @@
 //  Created by Ben Coumerilh on 10/27/11.
 //  Copyright (c) 2011 Northwest Kansas Technical College. All rights reserved.
 //
-
+//Added this file to my own branch-March 5th 2012
 #import "ViewController.h"
 #import "Character.h"
 
