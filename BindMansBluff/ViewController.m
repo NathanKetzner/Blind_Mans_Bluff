@@ -21,6 +21,7 @@
 
 - (void)viewDidLoad
 {
+    //YOYOYO!!!! CH-CH-CHeck it out! 
     if (!ourDeck)
     {
         ourDeck = [[Deck alloc] initWithAFullDeck];
