@@ -18,9 +18,10 @@
     AVAudioPlayer * taunt;
 }
 @property (nonatomic, strong) NSString * name;
-@property  (nonatomic, strong) NSString * gender;
 @property int chips;
+//the dealer sets this property without another method
 @property (nonatomic, strong) Card * ourCard;
+@property (nonatomic, strong) NSArray *charactersInHand;
 
 - (id) initCharacter:(NSString *) characterName 
        andWithGender:(NSString *)characterGender
