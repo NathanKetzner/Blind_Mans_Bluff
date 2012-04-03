@@ -38,8 +38,8 @@
     
 }
 
-//playing greeting sound
-- (void) playerEntersTable{
+//playing greeting sound,and animation,call event after sound is done
+- (void) introduceYourself{
 
 }
 
