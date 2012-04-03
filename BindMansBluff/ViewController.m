@@ -28,7 +28,7 @@
         [ourDeck shuffle];
         [ourDeck logThisDeck];
     }
-    Character * convict = [[Character alloc] initCharacter:@"convict" andWithGender:@"it" andWithChips:50];
+    Character * convict = [[Character alloc] initCharacterWithName:convict andWithChips:50];
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib
 }
