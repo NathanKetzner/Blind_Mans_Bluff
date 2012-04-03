@@ -32,5 +32,7 @@
 - (void) playTaunt;
 - (void) playTick;
 - (void) getCardFromDealer;
+- (void) submitBetAmount:(int)bet;
+- (void) logThisCharacter;
 
 @end

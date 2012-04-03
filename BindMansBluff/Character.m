@@ -19,7 +19,7 @@
 {
     name = characterName;
     chips = chipCount;
-    gender = characterGender;
+    
     
     NSString * greetingSoundLocation = [NSString stringWithFormat:@"%@/Intro.mp3",characterName];
     NSURL * greetingURL = [[NSBundle mainBundle] URLForResource:greetingSoundLocation withExtension:@""];
@@ -33,6 +33,7 @@
 
 - (int) placeBet
 {
+    chips -= 5;
     return 5;
 }
 - (void) playGreeting
@@ -59,7 +60,14 @@
 {
     
 }
-
+- (void) submitBetAmount:(int)bet
+{
+    chips -= bet;
+}
+- (void) logThisCharacter{
+    NSLog(@"Character Name is %@",name);
+    NSLog(@"Chip Count %@",chips);
+}
 
 
 

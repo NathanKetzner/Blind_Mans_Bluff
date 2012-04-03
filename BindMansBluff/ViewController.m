@@ -10,7 +10,7 @@
 #import "Character.h"
 
 @implementation ViewController
-
+@synthesize convict1;
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -28,7 +28,7 @@
         [ourDeck shuffle];
         [ourDeck logThisDeck];
     }
-    Character * convict = [[Character alloc] initCharacter:@"convict" andWithGender:@"it" andWithChips:50];
+    convict1 = [[Character alloc] initCharacter:@"convict" andWithGender:@"it" andWithChips:50];
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib
 }
