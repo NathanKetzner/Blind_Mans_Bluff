@@ -10,7 +10,7 @@
 
 @implementation Character
 @synthesize name;
-@synthesize gender;
+
 @synthesize ourCard;
 @synthesize chips;
 - (id) initCharacter:(NSString *) characterName 
@@ -19,45 +19,44 @@
 {
     name = characterName;
     chips = chipCount;
-    gender = characterGender;
+    
     
     NSString * greetingSoundLocation = [NSString stringWithFormat:@"%@/Intro.mp3",characterName];
     NSURL * greetingURL = [[NSBundle mainBundle] URLForResource:greetingSoundLocation withExtension:@""];
     greeting = [[AVAudioPlayer alloc] initWithContentsOfURL:greetingURL error:nil];
-    NSLog(greetingSoundLocation);
+
     [greeting play];
     
     return self;
     
 }
+//return 0 for check if minimum bet = 0
+//return -1 for fold
+//look at other players card, make a decision of cards
+- (int) requestBetFromPlayerWithMinimum:(int) minimumBet
+{
+    
+}
 
-- (int) placeBet
-{
-    return 5;
+//playing greeting sound
+- (void) playerEntersTable{
+
 }
-- (void) playGreeting
+
+//- (void) playTaunt;
+//- (void) playTick;
+
+
+
+//increase their chips,clear the cards,play winning sound or losing sound
+- (void) userWonTheHand:(BOOL) handWasWon
+          withPotAmount:(int) potAmount
 {
     
 }
-- (void) playLosingSound
-{
-    
-}
-- (void) playWinningSound
-{
-    
-}
-- (void) playTaunt
-{
-    
-}
-- (void) playTick
-{
-    
-}
-- (void) getCardFromDealer
-{
-    
+//if the player has enough money for ante this will return true
+-(BOOL) willPlayHandWithAnteAmount:(int) anteAmount{
+
 }
 
 

@@ -5,7 +5,7 @@
 //  Created by Ben Coumerilh on 10/27/11.
 //  Copyright (c) 2011 Northwest Kansas Technical College. All rights reserved.
 //
-
+//Added this file to my own branch-March 5th 2012
 #import "ViewController.h"
 #import "Character.h"
 
@@ -21,13 +21,14 @@
 
 - (void)viewDidLoad
 {
+    //YOYOYO!!!! CH-CH-CHeck it out! 
     if (!ourDeck)
     {
         ourDeck = [[Deck alloc] initWithAFullDeck];
         [ourDeck shuffle];
         [ourDeck logThisDeck];
     }
-    Character * convict = [[Character alloc] initCharacter:@"convict" andWithGender:@"it" andWithChips:50];
+    Character * convict = [[Character alloc] initCharacterWithName:convict andWithChips:50];
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib
 }
