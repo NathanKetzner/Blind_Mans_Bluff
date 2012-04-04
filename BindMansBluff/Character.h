@@ -23,17 +23,26 @@
 @property (nonatomic, strong) Card * ourCard;
 @property (nonatomic, strong) NSArray *charactersInHand;
 
-- (id) initCharacter:(NSString *) characterName 
-       andWithGender:(NSString *)characterGender
-        andWithChips:(int) chipCount;
-- (int) placeBet;
-- (void) playGreeting;
-- (void) playLosingSound;
-- (void) playWinningSound;
-- (void) playTaunt;
-- (void) playTick;
-- (void) getCardFromDealer;
-- (void) submitBetAmount:(int)bet;
-- (void) logThisCharacter;
+- (id) initCharacterWithName:(NSString *) characterName 
+                andWithChips:(int) chipCount;
+
+//return 0 for check if minimum bet = 0
+//return -1 for fold
+//look at other players card, make a decision of cards
+- (int) requestBetFromPlayerWithMinimum:(int) minimumBet;
+
+//playing greeting sound
+- (void) playerEntersTable;
+
+//- (void) playTaunt;
+//- (void) playTick;
+
+
+
+//increase their chips,clear the cards,play winning sound or losing sound
+- (void) userWonTheHand:(BOOL) handWasWon
+          withPotAmount:(int) potAmount;
+//if the player has enough money for ante this will return true
+-(BOOL) willPlayHandWithAnteAmount:(int) anteAmount;
 
 @end

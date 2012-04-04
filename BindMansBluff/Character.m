@@ -31,23 +31,7 @@
     
 }
 
-- (int) placeBet
-{
-    chips -= 5;
-    return 5;
-}
-- (void) playGreeting
-{
-    
-}
-- (void) playLosingSound
-{
-    
-}
-- (void) playWinningSound
-{
-    
-}
+
 
 //playing greeting sound
 - (void) playerEntersTable{
@@ -67,7 +51,11 @@
 }
 //if the player has enough money for ante this will return true
 -(BOOL) willPlayHandWithAnteAmount:(int) anteAmount{
-
+    if(chips > anteAmount){
+        chips -= anteAmount;
+        return YES;
+    }
+    return NO;
 }
 - (void) submitBetAmount:(int)bet
 {
