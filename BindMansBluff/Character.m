@@ -52,7 +52,12 @@
 - (void) userWonTheHand:(BOOL) handWasWon
           withPotAmount:(int) potAmount
 {
-    
+    if(handWasWon){
+        //winning sound with random algorithm
+        chips = potAmount+chips;
+    }else {
+        //losing sound
+    }
 }
 //if the player has enough money for ante this will return true
 -(BOOL) willPlayHandWithAnteAmount:(int) anteAmount{
