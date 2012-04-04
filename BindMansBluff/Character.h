@@ -32,7 +32,7 @@
 - (int) requestBetFromPlayerWithMinimum:(int) minimumBet;
 
 //playing greeting sound
-- (void) playerEntersTable;
+- (void) introduceYourself;
 
 //- (void) playTaunt;
 //- (void) playTick;

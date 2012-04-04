@@ -33,8 +33,8 @@
 
 
 
-//playing greeting sound
-- (void) playerEntersTable{
+//playing greeting sound,and animation,call event after sound is done
+- (void) introduceYourself{
 
 }
 
@@ -47,7 +47,12 @@
 - (void) userWonTheHand:(BOOL) handWasWon
           withPotAmount:(int) potAmount
 {
-    
+    if(handWasWon){
+        //winning sound with random algorithm
+        chips = potAmount+chips;
+    }else {
+        //losing sound
+    }
 }
 //if the player has enough money for ante this will return true
 -(BOOL) willPlayHandWithAnteAmount:(int) anteAmount{
