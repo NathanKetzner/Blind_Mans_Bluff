@@ -8,10 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "Deck.h"
+#import "Character.h"
 
 @interface ViewController : UIViewController
 {
     Deck * ourDeck;
 }
+@property (nonatomic, strong) Character* convict1;
 
 @end

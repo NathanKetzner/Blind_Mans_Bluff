@@ -10,7 +10,7 @@
 #import "Character.h"
 
 @implementation ViewController
-
+@synthesize convict1;
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

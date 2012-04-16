@@ -30,16 +30,9 @@
     return self;
     
 }
-//return 0 for check if minimum bet = 0
-//return -1 for fold
-//look at other players card, make a decision of cards
-- (int) requestBetFromPlayerWithMinimum:(int) minimumBet
-{
-    
-}
 
-//playing greeting sound
-- (void) playerEntersTable{
+//playing greeting sound,and animation,call event after sound is done
+- (void) introduceYourself{
 
 }
 
@@ -52,13 +45,29 @@
 - (void) userWonTheHand:(BOOL) handWasWon
           withPotAmount:(int) potAmount
 {
-    
+    if(handWasWon){
+        //winning sound with random algorithm
+        chips = potAmount+chips;
+    }else {
+        //losing sound
+    }
 }
 //if the player has enough money for ante this will return true
 -(BOOL) willPlayHandWithAnteAmount:(int) anteAmount{
-
+    if(chips > anteAmount){
+        chips -= anteAmount;
+        return YES;
+    }
+    return NO;
 }
-
+- (void) submitBetAmount:(int)bet
+{
+    chips -= bet;
+}
+- (void) logThisCharacter{
+    NSLog(@"Character Name is %@",name);
+    NSLog(@"Chip Count %@",chips);
+}
 
 
 
