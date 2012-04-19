@@ -16,6 +16,7 @@
     AVAudioPlayer * losing;
     AVAudioPlayer * winning;
     AVAudioPlayer * taunt;
+    AVAudioPlayer * Yeehaw;
 }
 @property (nonatomic, strong) NSString * name;
 @property int chips;

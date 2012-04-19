@@ -20,6 +20,13 @@
 		A905AD1114740A4500A36A1F /* Character.m in Sources */ = {isa = PBXBuildFile; fileRef = A905AD1014740A4500A36A1F /* Character.m */; };
 		A905AD2B14744C0C00A36A1F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A905AD2A14744C0C00A36A1F /* AVFoundation.framework */; };
 		A98074FD147456CF00D30A3E /* convict in Resources */ = {isa = PBXBuildFile; fileRef = A98074FC147456CF00D30A3E /* convict */; };
+		AAF444AB15406598000F2844 /* Yeehaw.wav in Resources */ = {isa = PBXBuildFile; fileRef = AAF444A315406598000F2844 /* Yeehaw.wav */; };
+		AAF444AC15406598000F2844 /* 124577__juskiddink__western-themetune2.wav in Resources */ = {isa = PBXBuildFile; fileRef = AAF444A415406598000F2844 /* 124577__juskiddink__western-themetune2.wav */; };
+		AAF444AD15406598000F2844 /* 125667__shawshank73__cowboy.wav in Resources */ = {isa = PBXBuildFile; fileRef = AAF444A515406598000F2844 /* 125667__shawshank73__cowboy.wav */; };
+		AAF444AE15406598000F2844 /* Celbrating.wav in Resources */ = {isa = PBXBuildFile; fileRef = AAF444A615406598000F2844 /* Celbrating.wav */; };
+		AAF444AF15406598000F2844 /* 70936__guitarguy1985__police.wav in Resources */ = {isa = PBXBuildFile; fileRef = AAF444A715406598000F2844 /* 70936__guitarguy1985__police.wav */; };
+		AAF444B015406598000F2844 /* 80449__turtlelg__jaildoorclose.wav in Resources */ = {isa = PBXBuildFile; fileRef = AAF444A815406598000F2844 /* 80449__turtlelg__jaildoorclose.wav */; };
+		AAF444B115406598000F2844 /* ConvictVoice.m4a in Resources */ = {isa = PBXBuildFile; fileRef = AAF444A915406598000F2844 /* ConvictVoice.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +51,13 @@
 		A905AD1014740A4500A36A1F /* Character.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Character.m; sourceTree = "<group>"; };
 		A905AD2A14744C0C00A36A1F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		A98074FC147456CF00D30A3E /* convict */ = {isa = PBXFileReference; lastKnownFileType = folder; path = convict; sourceTree = "<group>"; };
+		AAF444A315406598000F2844 /* Yeehaw.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Yeehaw.wav; sourceTree = "<group>"; };
+		AAF444A415406598000F2844 /* 124577__juskiddink__western-themetune2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "124577__juskiddink__western-themetune2.wav"; sourceTree = "<group>"; };
+		AAF444A515406598000F2844 /* 125667__shawshank73__cowboy.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 125667__shawshank73__cowboy.wav; sourceTree = "<group>"; };
+		AAF444A615406598000F2844 /* Celbrating.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Celbrating.wav; sourceTree = "<group>"; };
+		AAF444A715406598000F2844 /* 70936__guitarguy1985__police.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 70936__guitarguy1985__police.wav; sourceTree = "<group>"; };
+		AAF444A815406598000F2844 /* 80449__turtlelg__jaildoorclose.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 80449__turtlelg__jaildoorclose.wav; sourceTree = "<group>"; };
+		AAF444A915406598000F2844 /* ConvictVoice.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = ConvictVoice.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +117,7 @@
 				842D00AE14605A6900BE6FED /* Deck.m */,
 				A905AD0F14740A4500A36A1F /* Character.h */,
 				A905AD1014740A4500A36A1F /* Character.m */,
+				AAF444A215406598000F2844 /* CHARACTER SOUNDS */,
 				A98074FC147456CF00D30A3E /* convict */,
 				8491527114599DF6005118F1 /* Supporting Files */,
 			);
@@ -118,6 +133,20 @@
 				8491527814599DF6005118F1 /* BindMansBluff-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AAF444A215406598000F2844 /* CHARACTER SOUNDS */ = {
+			isa = PBXGroup;
+			children = (
+				AAF444A315406598000F2844 /* Yeehaw.wav */,
+				AAF444A415406598000F2844 /* 124577__juskiddink__western-themetune2.wav */,
+				AAF444A515406598000F2844 /* 125667__shawshank73__cowboy.wav */,
+				AAF444A615406598000F2844 /* Celbrating.wav */,
+				AAF444A715406598000F2844 /* 70936__guitarguy1985__police.wav */,
+				AAF444A815406598000F2844 /* 80449__turtlelg__jaildoorclose.wav */,
+				AAF444A915406598000F2844 /* ConvictVoice.m4a */,
+			);
+			path = "CHARACTER SOUNDS";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,6 +203,13 @@
 				8491527514599DF6005118F1 /* InfoPlist.strings in Resources */,
 				8491528114599DF6005118F1 /* ViewController.xib in Resources */,
 				A98074FD147456CF00D30A3E /* convict in Resources */,
+				AAF444AB15406598000F2844 /* Yeehaw.wav in Resources */,
+				AAF444AC15406598000F2844 /* 124577__juskiddink__western-themetune2.wav in Resources */,
+				AAF444AD15406598000F2844 /* 125667__shawshank73__cowboy.wav in Resources */,
+				AAF444AE15406598000F2844 /* Celbrating.wav in Resources */,
+				AAF444AF15406598000F2844 /* 70936__guitarguy1985__police.wav in Resources */,
+				AAF444B015406598000F2844 /* 80449__turtlelg__jaildoorclose.wav in Resources */,
+				AAF444B115406598000F2844 /* ConvictVoice.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

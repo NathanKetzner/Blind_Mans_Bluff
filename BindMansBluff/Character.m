@@ -22,17 +22,38 @@
     
     
     NSString * greetingSoundLocation = [NSString stringWithFormat:@"%@/Intro.mp3",characterName];
+    
     NSURL * greetingURL = [[NSBundle mainBundle] URLForResource:greetingSoundLocation withExtension:@""];
     greeting = [[AVAudioPlayer alloc] initWithContentsOfURL:greetingURL error:nil];
 
     [greeting play];
+    
+    NSURL * winningURL = [[NSBundle mainBundle] URLForResource:@"winning" withExtension:@"mp3"];
+    winning = [[AVAudioPlayer alloc] initWithContentsOfURL:winningURL error:nil];
+    
+    [winning play];
+    
+    NSURL * tauntURL = [[NSBundle mainBundle] URLForResource:@"taunt" withExtension:@"mp3"];
+    taunt = [[AVAudioPlayer alloc] initWithContentsOfURL:tauntURL error:nil];
+    
+    [taunt play];
+    
+    NSURL * losingURL = [[NSBundle mainBundle] URLForResource:@"losing" withExtension:@"mp3"];
+    losing = [[AVAudioPlayer alloc] initWithContentsOfURL:losingURL error:nil];
+    
+    [losing play];
     
     return self;
     
 }
 
 //playing greeting sound,and animation,call event after sound is done
-- (void) introduceYourself{
+- (void) introduceYourself
+{
+    NSURL *url1 = [[NSBundle mainBundle]URLForResource:@"Yeehaw" withExtension:@"wav"];
+    Yeehaw = [[AVAudioPlayer alloc] initWithContentsOfURL:url1 error:nil];
+    
+    [Yeehaw play];
 
 }
 
@@ -47,9 +68,15 @@
 {
     if(handWasWon){
         //winning sound with random algorithm
+        
+        [winning play];
+        
         chips = potAmount+chips;
     }else {
+        
         //losing sound
+        
+        [losing play];
     }
 }
 //if the player has enough money for ante this will return true
@@ -62,6 +89,7 @@
 }
 - (void) submitBetAmount:(int)bet
 {
+    //taunt sound if confident with bet
     chips -= bet;
 }
 - (void) logThisCharacter{
