@@ -10,12 +10,10 @@
 
 @implementation Character
 @synthesize name;
-
+@synthesize charactersInHand;
 @synthesize ourCard;
 @synthesize chips;
-- (id) initCharacter:(NSString *) characterName 
-       andWithGender:(NSString *)characterGender
-        andWithChips:(int) chipCount;
+-(id)initCharacterWithName:(NSString *)characterName andWithChips:(int)chipCount
 {
     name = characterName;
     chips = chipCount;
