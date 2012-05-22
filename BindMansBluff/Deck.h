@@ -7,13 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Card.h"
 
 @interface Deck : NSObject
 {
     NSMutableArray * cardDeck;
     UIImage * spriteImage;
-}
+} 
+@property int currentCard;
 -(id) initWithAFullDeck;
 -(void) logThisDeck;
 -(void) shuffle;
+-(Card *)dealCard;
 @end

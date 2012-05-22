@@ -13,11 +13,14 @@
 @synthesize charactersInHand;
 @synthesize ourCard;
 @synthesize chips;
+@synthesize folded;
+
+
 -(id)initCharacterWithName:(NSString *)characterName andWithChips:(int)chipCount
 {
     name = characterName;
     chips = chipCount;
-    
+    folded=NO;
     
     NSString * greetingSoundLocation = [NSString stringWithFormat:@"%@/Intro.mp3",characterName];
     
@@ -90,9 +93,14 @@
     //taunt sound if confident with bet
     chips -= bet;
 }
-- (void) logThisCharacter{
+- (void)logThisCharacter{
     NSLog(@"Character Name is %@",name);
-    NSLog(@"Chip Count %@",chips);
+    NSLog(@"Chip Count %d",chips);
+    NSLog(@"Our Card is %d",ourCard.value);
+}
+-(int)requestBetFromPlayerWithMinimum:(int)minimumBet
+{
+    return minimumBet; 
 }
 
 

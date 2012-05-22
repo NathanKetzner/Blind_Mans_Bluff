@@ -18,6 +18,7 @@
     AVAudioPlayer * taunt;
     AVAudioPlayer * Yeehaw;
 }
+@property BOOL folded;
 @property (nonatomic, strong) NSString * name;
 @property int chips;
 //the dealer sets this property without another method
@@ -45,5 +46,6 @@
           withPotAmount:(int) potAmount;
 //if the player has enough money for ante this will return true
 -(BOOL) willPlayHandWithAnteAmount:(int) anteAmount;
+-(void)logThisCharacter;
 
 @end

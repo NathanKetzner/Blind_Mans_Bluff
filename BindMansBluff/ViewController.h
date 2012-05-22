@@ -15,5 +15,7 @@
     Deck * ourDeck;
 }
 @property (nonatomic, strong) Character* convict1;
-
+@property (nonatomic,strong)NSMutableArray * players;
+@property BOOL stillPlaying;
+@property int currentPlayer;
 @end
