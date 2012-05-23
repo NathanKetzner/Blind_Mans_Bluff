@@ -37,7 +37,7 @@
 
 //- (void) playTaunt;
 //- (void) playTick;
-
+//comment..
 
 
 //increase their chips,clear the cards,play winning sound or losing sound
