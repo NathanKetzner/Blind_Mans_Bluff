@@ -10,7 +10,7 @@
 #import "Character.h"
 
 @implementation ViewController
-@synthesize convict1;
+@synthesize convict1,players,stillPlaying,currentPlayer;
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -21,6 +21,15 @@
 
 - (void)viewDidLoad
 {
+    players = [[NSMutableArray alloc]init];
+    stillPlaying = YES;
+    
+    Character * player1 = [[Character alloc] initCharacterWithName:@"player 1" andWithChips:50];
+    Character * player2 = [[Character alloc] initCharacterWithName:@"player 2" andWithChips:50];
+    Character * player3 = [[Character alloc] initCharacterWithName:@"player 3" andWithChips:50];
+    [players addObject:player1];
+    [players addObject:player2];
+    [players addObject:player3];
     //YOYOYO!!!! CH-CH-CHeck it out! 
     if (!ourDeck)
     {
@@ -28,7 +37,7 @@
         [ourDeck shuffle];
         [ourDeck logThisDeck];
     }
-    Character * convict = [[Character alloc] initCharacterWithName:convict andWithChips:50];
+    [self gameController];
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib
 }
@@ -66,5 +75,24 @@
     // Return YES for supported orientations
     return YES;
 }
+-(void)gameController
+{
+    while ([[players objectAtIndex:0] chips]>0 && stillPlaying) {
+        for (int i=0; i<[players count]; i++) {
+            if(![[players objectAtIndex:i] willPlayHandWithAnteAmount:1]){
+                [[players objectAtIndex:i] setFolded:YES];
+            }
+        }
+        for (int i =0; i < [players count]; i++) {
+            [[players objectAtIndex:i] setOurCard:[ourDeck dealCard]];
+            [[players objectAtIndex:i] logThisCharacter];
+        }
+        //temporary code
+        stillPlaying = NO;
+        [ourDeck shuffle];
+    }
+    NSLog(@"Done with game controller setup");
+}
+    
 
 @end

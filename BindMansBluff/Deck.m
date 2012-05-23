@@ -10,9 +10,12 @@
 #import "Card.h"
 
 @implementation Deck
+@synthesize currentCard;
 
 -(id)initWithAFullDeck
 {
+    currentCard= 0;
+    
     for (int i = 2; i <=14; i++) 
     {
         if (!cardDeck) {
@@ -47,6 +50,12 @@
         int ourRandomNumber = arc4random() % i;
         [cardDeck exchangeObjectAtIndex:i withObjectAtIndex:ourRandomNumber];
     }
+    currentCard = 0;
+}
+-(Card *)dealCard
+{
+    currentCard++;
+    return [cardDeck objectAtIndex:currentCard-1];
 }
 
 
