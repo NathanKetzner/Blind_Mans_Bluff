@@ -19,6 +19,8 @@
 		8491528914599EA5005118F1 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 8491528814599EA5005118F1 /* Card.m */; };
 		A905AD1114740A4500A36A1F /* Character.m in Sources */ = {isa = PBXBuildFile; fileRef = A905AD1014740A4500A36A1F /* Character.m */; };
 		A905AD2B14744C0C00A36A1F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A905AD2A14744C0C00A36A1F /* AVFoundation.framework */; };
+		A97C345F156E8FE900B00086 /* Kilmainham_Jail.png in Resources */ = {isa = PBXBuildFile; fileRef = A97C345E156E8FE900B00086 /* Kilmainham_Jail.png */; };
+		A97C3462156E900200B00086 /* start button.png in Resources */ = {isa = PBXBuildFile; fileRef = A97C3461156E900200B00086 /* start button.png */; };
 		A98074FD147456CF00D30A3E /* convict in Resources */ = {isa = PBXBuildFile; fileRef = A98074FC147456CF00D30A3E /* convict */; };
 		AA9E1834156BEE86004AE5CD /* Local20prison.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA9E1832156BEE86004AE5CD /* Local20prison.jpg */; };
 		AAAF8846156D46EE0041D043 /* Table10p_1.png in Resources */ = {isa = PBXBuildFile; fileRef = AAAF8845156D46EE0041D043 /* Table10p_1.png */; };
@@ -49,6 +51,8 @@
 		A905AD0F14740A4500A36A1F /* Character.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Character.h; sourceTree = "<group>"; };
 		A905AD1014740A4500A36A1F /* Character.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Character.m; sourceTree = "<group>"; };
 		A905AD2A14744C0C00A36A1F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A97C345E156E8FE900B00086 /* Kilmainham_Jail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Kilmainham_Jail.png; sourceTree = "<group>"; };
+		A97C3461156E900200B00086 /* start button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "start button.png"; sourceTree = "<group>"; };
 		A98074FC147456CF00D30A3E /* convict */ = {isa = PBXFileReference; lastKnownFileType = folder; path = convict; sourceTree = "<group>"; };
 		AA9E1832156BEE86004AE5CD /* Local20prison.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Local20prison.jpg; sourceTree = "<group>"; };
 		AAAF8845156D46EE0041D043 /* Table10p_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Table10p_1.png; sourceTree = "<group>"; };
@@ -118,6 +122,8 @@
 				176AD3F9154079AB006CA78C /* 20784__wanna73__crowd-cheering-football-01.wav */,
 				176AD3FA154079AB006CA78C /* 102437__shawshank73__scottstoked-yeehaw.wav */,
 				176AD3FB154079AC006CA78C /* voice2.m4a */,
+				A97C345E156E8FE900B00086 /* Kilmainham_Jail.png */,
+				A97C3461156E900200B00086 /* start button.png */,
 				AAF444A215406598000F2844 /* CHARACTER SOUNDS */,
 				A98074FC147456CF00D30A3E /* convict */,
 				8491527114599DF6005118F1 /* Supporting Files */,
@@ -200,6 +206,8 @@
 				AA9E1834156BEE86004AE5CD /* Local20prison.jpg in Resources */,
 				AAAF8846156D46EE0041D043 /* Table10p_1.png in Resources */,
 				AAAF8851156D4A240041D043 /* button.png in Resources */,
+				A97C345F156E8FE900B00086 /* Kilmainham_Jail.png in Resources */,
+				A97C3462156E900200B00086 /* start button.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
